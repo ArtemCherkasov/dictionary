@@ -1,0 +1,11 @@
+CREATE TABLE "main"."main_words" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "word" TEXT
+);
+
+CREATE TABLE "main"."other_words" (
+    "id" INTEGER PRIMARY KEY AUTOINCREMENT,
+    "fk_main_word" INTEGER,
+    "word" TEXT
+);
+
